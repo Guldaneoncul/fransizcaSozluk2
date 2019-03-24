@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="@dimen/button_high"
+        android:layout_height="48dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@tools:sample/avatars[1]" />
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:paddingLeft="@dimen/padding"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/button_high">
+
+    <TextView
+        android:id="@+id/fransizca_tv"
+        android:layout_width="match_parent"
+        android:text="TextView"
+        android:layout_height="25dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_gravity="bottom"
+        />
+
+    <TextView
+        android:id="@+id/turkce_tv"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+       android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
